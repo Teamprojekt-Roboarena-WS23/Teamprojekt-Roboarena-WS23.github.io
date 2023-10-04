@@ -1,0 +1,304 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    font-family: tahoma, verdana, arial, helvetica, sans-serif;
+    font-size: 16px;
+    color: #444444;
+}
+
+a, a:visited, a:active {
+    font-family: tahoma, verdana, arial, helvetica, sans-serif;
+    font-size: 16px;
+    color: #0000BB;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #444444;
+    text-decoration: underline;
+
+}
+
+header {
+    height: 110px;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    background: #503B31; 
+    margin-right: auto; 
+    margin-left: auto; 
+    border-bottom: 10px solid #AF9D97;
+}
+
+#headercontent {
+    width: 70%;
+    text-align: left;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 28px;
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-right: auto; 
+    margin-left: auto; 
+
+}
+
+#title {
+    float: left;
+}
+
+#title h1 {
+    letter-spacing: -1px;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+#title h1 a, #title h1 a:visited, #title h1 a:active, #title h1 a:hover {
+    letter-spacing: -1px;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+#title p {
+    margin-top: 0px;
+    text-align: right;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+#topmenu {
+    float: left;
+    position: relative;
+    left: 100px;
+    height: 25px;
+    padding-bottom: 0px;
+    margin-top: 52px; 
+    margin-right: 0px;
+    margin-bottom: 0px; 
+}
+
+#topmenu ul {
+    list-style-type: square;
+    margin: 0;
+    padding: 0;
+}
+
+#topmenu li {
+    display: inline;
+    list-style: none;
+}
+
+#topmenu li a, #topmenu li a:visited, #topmenu li a:active {
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    background: #705D56;
+    text-decoration: none;
+    float: left;
+    margin: 0px 2px 0px 0px;
+    padding: 8px 0px 8px 25px;
+}
+
+#topmenu li a span, #topmenu li a:visited span, #topmenu li a:active span {
+    padding-right: 25px;
+    padding-top: 8px;
+    background: #705D56;
+}
+
+#topmenu li a:hover {
+    text-decoration: none;
+    margin: 0px 2px 0px 0px;
+    padding: 8px 0px 8px 25px;
+    background: #AF9D97;
+    color: #503B31;
+}
+
+#topmenu li a:hover span {
+    background: #AF9D97;
+}
+
+main {
+    min-height: calc(100vh - 241px);
+    width: 70%;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-align: left;
+    margin-top: 20px; 
+    margin-bottom: 0px; 
+    margin-right: auto; 
+    margin-left: auto; 
+}
+
+main h1 {
+    color: #503B31;
+    margin-top: 60px;
+}
+
+main ul {
+    list-style: none;
+    margin-left: 0;
+    margin-top: -5px;
+}
+
+main li {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+main li:before {
+    padding-left: 10px;
+    padding-right: 10px;
+    content: "•"
+}
+
+main li.todo:before {
+    padding-left: 0px;
+    padding-right: 5px;
+    content: "☑️";    
+}
+
+main li.inprogress:before {
+    padding-left: 0px;
+    padding-right: 5px;
+    content: "⏳";
+}
+
+main li.done:before {
+    padding-left: 0px;
+    padding-right: 5px;
+    content: "✅";
+}
+
+content {
+    margin: 0px 0px 60px 0px;
+    padding: 0;
+    float: left;
+    width: 90%;
+    display: block;
+}
+
+.logtitle {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    height: 60px;
+}
+
+.logtitle h2 {
+    position: relative;
+    bottom: -25px;
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #503B31;
+}
+
+.logtitle h2 a, .logtitle h2 a:visited, .logtitle h2 a:active {
+    font-size: 20px;
+    font-weight: normal;
+    color: #503B31;
+    text-decoration: none;
+}
+
+.logtitle h2 a:hover {
+    color: #444444;
+    text-decoration: underline;
+}
+
+.logdate {
+    float: left;
+    background: #D3C9C5 left center;
+    color: #503B31;
+    width: 55px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 16px;
+    font-variant: small-caps;
+    padding: 7px 0px 13px 0px;
+    margin: 0px 12px 0px 0px;
+}
+
+.logdate span {
+    display: block;
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0px 0px 0px 0px;
+    padding: 3px 0px 0px 0px;
+}
+
+.logtext {
+    line-height: 130%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 1px;
+}
+
+.logtext p {
+    margin-top: 10px;
+}
+
+.logtext img {
+    margin-top: 5px;
+    width: 60%;
+    min-width: 500px;
+}
+
+.logtext ul img {
+    padding-left: 12px;
+}
+
+
+
+.la:before {
+    color: green;
+    content: " - Lucas";
+    font-weight: bold;
+}
+
+.kd:before {
+    color: green;
+    content: " - Kevin";
+    font-weight: bold;
+}
+
+.pde:before {
+    color: green;
+    content: " - Philip";
+    font-weight: bold;
+}
+
+.lk:before {
+    color: green;
+    content: " - Ludwig";
+    font-weight: bold;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    padding: 15px 0px 15px 0px;
+    clear: both;
+    display: block;
+    text-align: center;
+    background-color: #F1F3F2;
+    border-top: 1px solid #BBBBBB;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}

@@ -4,23 +4,23 @@ html {
 
 body {
     min-height: 100%;
-    background-color: #ffffff;
+    background-color: #1A1A1A;
     margin: 0px;
     padding: 0px;
     font-family: tahoma, verdana, arial, helvetica, sans-serif;
     font-size: 16px;
-    color: #444444;
+    color: #CFCFCF;
 }
 
 a, a:visited, a:active {
     font-family: tahoma, verdana, arial, helvetica, sans-serif;
     font-size: 16px;
-    color: #0000BB;
+    color: #60A5FF;
     text-decoration: none;
 }
 
 a:hover {
-    color: #444444;
+    color: #9C735F;
     text-decoration: underline;
 
 }
@@ -32,7 +32,7 @@ header {
     background: #503B31; 
     margin-right: auto; 
     margin-left: auto; 
-    border-bottom: 10px solid #AF9D97;
+    border-bottom: 10px solid #51585B;
 }
 
 #headercontent {
@@ -121,12 +121,12 @@ header {
     text-decoration: none;
     margin: 0px 2px 0px 0px;
     padding: 8px 0px 8px 25px;
-    background: #AF9D97;
-    color: #503B31;
+    background: #51585B;
+    color: #CFCFCF;
 }
 
 #topmenu li a:hover span {
-    background: #AF9D97;
+    background: #51585B;
 }
 
 main {
@@ -142,7 +142,7 @@ main {
 }
 
 main h1 {
-    color: #503B31;
+    color: #DDC0B0;
     margin-top: 60px;
 }
 
@@ -201,13 +201,13 @@ content {
     margin-top: 0px;
     font-size: 20px;
     font-weight: normal;
-    color: #503B31;
+    color: #DDC0B0;
 }
 
 .logtitle h2 a, .logtitle h2 a:visited, .logtitle h2 a:active {
     font-size: 20px;
     font-weight: normal;
-    color: #503B31;
+    color: #DDC0B0;
     text-decoration: none;
 }
 
@@ -218,8 +218,8 @@ content {
 
 .logdate {
     float: left;
-    background: #D3C9C5 left center;
-    color: #503B31;
+    background: #503B31 left center;
+    color: #DDC0B0;
     width: 55px;
     text-align: center;
     font-size: 15px;
@@ -263,25 +263,25 @@ content {
 
 
 .la:before {
-    color: green;
+    color: #80FF80;
     content: " - Lucas";
     font-weight: bold;
 }
 
 .kd:before {
-    color: green;
+    color: #80FF80;
     content: " - Kevin";
     font-weight: bold;
 }
 
 .pde:before {
-    color: green;
+    color: #80FF80;
     content: " - Philip";
     font-weight: bold;
 }
 
 .lk:before {
-    color: green;
+    color: #80FF80;
     content: " - Ludwig";
     font-weight: bold;
 }
@@ -294,8 +294,8 @@ footer {
     clear: both;
     display: block;
     text-align: center;
-    background-color: #F1F3F2;
-    border-top: 1px solid #BBBBBB;
+    background-color: #212322;
+    border-top: 1px solid #606060;
 }
 
 footer p {

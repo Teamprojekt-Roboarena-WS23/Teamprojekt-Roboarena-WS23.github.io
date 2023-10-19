@@ -154,6 +154,7 @@ main ul {
 main li {
     padding-left: 1em;
     text-indent: -1em;
+	padding-bottom: 1em;
 }
 
 main li:before {

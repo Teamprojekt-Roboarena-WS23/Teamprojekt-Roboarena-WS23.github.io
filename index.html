@@ -32,66 +32,69 @@
 
 <main>
   <content>
-    <h1>Second Sprint: 16.10.23 - 30.10.23</h2>
+    <!-- Unordered Lists (ul) support list items (li) with following classes: "todo", "inprogress", "done" -->
+    <!-- List entries can be finished off with <span class="your_initials"></span> to indicate who worked on what -->
+  
+    <h1>Second Sprint: 16.10.23 - 30.10.23</h1>
+    
     <div class="logtitle">
       <div class="logdate">Oct<span>16</span></div>
       <h2>We implemented new features (BasicRobot and Arena)</h2>
     </div>
     <div class="logtext">
-	<ul>
-	      <li class="done">BasicRobot with attributes and his direction<span class="pde"><span class="lk"></span></span> <br />
-			<img alt="BasicRobot" src="images/02Sprint/RoundWithAngle.gif" /></li>
-		<li class="done">New Arena and terrain class<span class="pde"><span class="lk"></span></span> <br />
-			<img alt="basicArena" src="images/02Sprint/ArenaTiles.gif" /></li>
-	</ul>
+    <ul>
+      <li class="done">BasicRobot with position and direction attributes<span class="pde"><span class="lk"></span></span> <br />
+                       <img alt="BasicRobot" src="images/02Sprint/RoundWithAngle.gif" /></li>
+      <li class="done">New Arena and terrain class<span class="pde"></span><span class="lk"></span> <br />
+                       <img alt="basicArena" src="images/02Sprint/ArenaTiles.gif" /></li>
+    </ul>
     </div>
-		
-	<div class="logtitle">
-      	  <div class="logdate">Oct<span>18</span></div>
-	  <h2>Added another class</h2>
-	</div>
-	<div class="logtext">
-	 <p>
-	  Added class GameState. To handle the world and movement.
-		<li class="done">The structure of our current project:<span class="pde"><span class="lk"></span></span><br />
-		
-        </p>
-	  <ul>
-                	<img alt="current project 30_10" src="images/02Sprint/Current-Project.png" /></li>
-	  </ul>
-	</div>
-		
-	<div class="logtitle">
-      	 <div class="logdate">Oct<span>23</span></div>
-	 <h2>Gamedesign</h2>
-	</div>
-	<div class="logtext">
-	 <p>
-	      We met together in the library and talked about how we wanted to design our game.
-         </p>
-	 <ul>
-	 <li class="done">That is how the diffrent windows could be handeled  <br />
-                	<img alt="Gamedesign windows" src="images/02Sprint/Gamedesign01.jpg" /></li>
-	 <li class="done">And this is our UML-structure and some future features <br />
-                	<img alt="Gamedesign UML" src="images/02Sprint/Gamedesign02.jpg" /></li>
-	 </ul>
-	</div>
-		
-	<div class="logtitle">
-      	 <div class="logdate">Oct<span>25</span></div>
-	 <h2>Update workflow</h2>
-	</div>
-	<div class="logtext">
-	 <p>
-	      Now an Error is displayed and you cant merge, if flake8 is not correct.
-         </p>
-	 <ul>
-	      <li class="done">Changed the workflow<span class="kd"></span><br />
-			<img alt="Workflow" src="images/02Sprint/new_workflow.png" /></li>
-	</ul>
-	</div>
-    <!-- Unordered Lists (ul) support list items (li) with following classes: "todo", "inprogress", "done" -->
-    <!-- List entries can be finished off with <span class="your_initials"></span> to indicate who worked on what -->
+        
+    <div class="logtitle">
+      <div class="logdate">Oct<span>18</span></div>
+      <h2>Added Game State Class</h2>
+    </div>
+    <div class="logtext">
+      <p>
+        Added the class GameState to handle the states of the world and movement.        
+      </p>
+      <ul>
+        <li class="done">The structure of our current project:<span class="pde"></span><span class="lk"></span><br />
+                         <img alt="Current file stucture as of 30.10." src="images/02Sprint/Current-Project.png" /></li>
+      </ul>
+    </div>
+        
+    <div class="logtitle">
+      <div class="logdate">Oct<span>23</span></div>
+      <h2>Gamedesign</h2>
+    </div>
+    <div class="logtext">
+      <p>
+        We met in the library and talked about how we wanted to design our game.
+      </p>
+      <ul>
+        <li class="done">That is how the different windows could be handled: <br />
+                         <img alt="Gamedesign windows" src="images/02Sprint/Gamedesign01.jpg" /></li>
+        <li class="done">And this is our UML structure and some future features: <br />
+                         <img alt="Gamedesign UML" src="images/02Sprint/Gamedesign02.jpg" /></li>
+      </ul>
+    </div>
+        
+    <div class="logtitle">
+      <div class="logdate">Oct<span>25</span></div>
+      <h2>Update workflow</h2>
+    </div>
+    <div class="logtext">
+      <p>
+        All Flake8 warnings and style violations are now treated as errors and prohibit merging into the main branch.
+      </p>
+      <ul>
+        <li class="done">Changed the workflow<span class="kd"></span><br />
+        <img alt="GitHub Workflow" src="images/02Sprint/new_workflow.png" /></li>
+      </ul>
+    </div>
+  
+  
   
     <h1>First Sprint: 02.10.23 - 15.10.23</h1>
     
@@ -108,22 +111,22 @@
         <li class="done">Set up this update log website <span class="lk"></span> <br />
                          <img alt="Screenshot of this website" src="images/01Sprint/UpdatesWebsite.jpg" /></li>
         <li class="done">Create an <a href="https://cryptpad.fr/pad/#/2/pad/view/1pI93LOKYu0qQH5-oVXKln3GS3sYx2IpPVC6psSkogU/">online 
-		                 collaboration document</a> for brainstorming <span class="la"></span></li>
+                         collaboration document</a> for brainstorming <span class="la"></span></li>
         <li class="done">Create a simple game code in the repository <span class="pde"></span></li>
         <li class="done">Set up Continuous Integration using GitHub Actions: 
-		                 A Flake8 test is automatically run on every pull request. <span class="kd"></span> <br />
-		                 <img alt="Screenshot of the continuous integration" src="images/01Sprint/Flake8Test.jpg" /></li>
-		<li class="done">Create basic game code:
-			<ul>
-				<li class="done">Draw a basic field with a movable character <span class="pde"></span> <br />
-				                 <img alt="Black background, blue moving square as player character" src="images/01Sprint/InitialGame.gif" /></li>
-				<li class="done">Avoid the player going out of the screen: The edges of the window are borders. <span class="la"></span> <br />
-				                 <img alt="Player now can't cross the window borders" src="images/01Sprint/WithBorders.gif" /></li>
-				<li class="done">Make the player movement smooth: You can hold keys to keep going, and you can go diagonally by
-				                 holding two keys at once. <span class="lk"></span> <br />
-								 <img alt="Smooth movement as described above" src="images/01Sprint/SmoothMovement.gif" /></li>
-			</ul>
-		</li>
+                         A Flake8 test is automatically run on every pull request. <span class="kd"></span> <br />
+                         <img alt="Screenshot of the continuous integration" src="images/01Sprint/Flake8Test.jpg" /></li>
+        <li class="done">Create basic game code:
+            <ul>
+                <li class="done">Draw a basic field with a movable character <span class="pde"></span> <br />
+                                 <img alt="Black background, blue moving square as player character" src="images/01Sprint/InitialGame.gif" /></li>
+                <li class="done">Avoid the player going out of the screen: The edges of the window are borders. <span class="la"></span> <br />
+                                 <img alt="Player now can't cross the window borders" src="images/01Sprint/WithBorders.gif" /></li>
+                <li class="done">Make the player movement smooth: You can hold keys to keep going, and you can go diagonally by
+                                 holding two keys at once. <span class="lk"></span> <br />
+                                 <img alt="Smooth movement as described above" src="images/01Sprint/SmoothMovement.gif" /></li>
+            </ul>
+        </li>
       </ul>
     </div>
     

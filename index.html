@@ -34,6 +34,73 @@
   <content>
     <!-- Unordered Lists (ul) support list items (li) with following classes: "todo", "inprogress", "done" -->
     <!-- List entries can be finished off with <span class="your_initials"></span> to indicate who worked on what -->
+    <h1>Fourth Sprint: 13.11.23 - 10.12.23</h1>
+    <div class="logtitle">
+      <div class="logdate">Nov <span>26</span></div>
+      <h2>Basic collision detection and health bars for robots</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Added basic collision detection (not working perfectly so far): Entities can no longer pass through walls. <br />
+                         They can die when touching acid and can revive each other. If both die, a Game Over screen is shown.
+                         <span class="pde"></span><span class="lk"></span><br />
+                         <img alt="Game Over screen" src="images/04Sprint/GameOver.jpg" /></li>
+
+        <li class="done">Added health bars and calculation of HP. Touching acid will reduce the HP of a robot until it dies.
+                         <span class="la"></span><br />
+                         <img alt="Robots now have health bars" src="images/04Sprint/HealthBars.jpg" /></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Nov <span>25</span></div>
+      <h2>Bullets and a beautiful main menu</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Added the ability for robots to shoot bullets, including the new bullet class. <span class="kd"></span><br />
+                         <img alt="Robots are shooting bullets" src="images/04Sprint/Shooting.jpg" /></li>
+
+        <li class="done">Added background music for the menus and the game. <span class="pde"></span></li>
+
+        <li class="done">Made the main menu and level selection screens beautiful with graphical backgrounds, buttons
+                         and hover and click effects. <span class="pde"></span><br />
+                         <img alt="Graphical main menu with image background and buttons" src="images/04Sprint/MainMenu.jpg">
+                         <img alt="Graphical level selection with image background and buttons" src="images/04Sprint/LevelSelection.jpg"></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Nov <span>23</span></div>
+      <h2>Two controllable players saved in the arena map</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Start to implement multiplayer capabilities: <br />
+                         The number of players was reduced to two, they are independently controllable:
+                         One with WASD and one with the arrow keys. It is no longer possible to select one active robot.
+                         <span class="lk"></span></li>
+
+        <li class="done">The starting positions for the two robots are stored per arena in the map TMX file. <span class="pde"></span><br />
+                         <img alt="The two robots have spawn points that fit the arena" src="images/04Sprint/StartingPositions.jpg" /></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Nov <span>15</span></div>
+      <h2>Code Structure updated: Classes and Inheritance</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Major Refactoring to put code in according classes and add the following inheritance structure: <br />
+                         An Entity is anything that can move in the arena. <br />
+                         An Actor is an active entity, that is a Robot (playable) or an Enemy.
+                         There can be other, passive Entities such as bullets. <br />
+                         A BasicRobot is an Actor. <br />
+                         This inheritance allows to easily draw, move, kill, etc. all kinds of entities without code duplication.
+                         <span class="lk"></span></li>
+      </ul>
+    </div>
 
     <h1>Third Sprint: 30.10.23 - 12.11.23</h1>
 
@@ -49,11 +116,11 @@
         <li class="done">The robots are also drawn using graphical tiles now. <span class="pde"></span><br />
                          <img src="images/03Sprint/TmxTiles.jpg" alt="A larger arena drawn with multiple layers of tiles" /></li>
 
-        <li class="inprogress">A level selection screen has been added that dynamically shows buttons for levels.
-                               Any existing level can be loaded from TMX files. <span class="lk"></span><br />
-                               <img src="images/03Sprint/LevelSelection.gif" alt="Dynamic level selection screen based on tmx files"/></li>
+        <li class="done">A level selection screen has been added that dynamically shows buttons for levels.
+                         Any existing level can be loaded from TMX files. <span class="lk"></span><br />
+                         <img src="images/03Sprint/LevelSelection.gif" alt="Dynamic level selection screen based on tmx files"/></li>
 
-        <li class="inprogress">Robots have acceleration, velocity and max velocity both for normal movement and rotation. <span class="kd"></span></li>
+        <li class="done">Robots have acceleration, velocity and max velocity both for normal movement and rotation. <span class="kd"></span></li>
       </ul>
     </div>
 

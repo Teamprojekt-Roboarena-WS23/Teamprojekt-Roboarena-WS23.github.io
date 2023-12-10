@@ -36,6 +36,61 @@
     <!-- List entries can be finished off with <span class="your_initials"></span> to indicate who worked on what -->
     <h1>Fourth Sprint: 13.11.23 - 10.12.23</h1>
     <div class="logtitle">
+      <div class="logdate">Dec <span>10</span></div>
+      <h2>Implementing enemies</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="inprogress">Enemies can move, shoot and target a player. They can do damage to players and
+                         take damage from shots.<span class="la"></span></li>
+        <li class="inprogress">Enemies target the player closest to them, health points and damage are
+                               calculated in a unified way for all Actors (Robots and Enemies). <span class="lk"></span> <br/>
+                               <img alt="Enemies target players and shoot" src="images/04Sprint/ActiveEnemies.gif" /></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Dec <span>04</span></div>
+      <h2>Started implementing enemies</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Enemy positions are decoded from the level files and the enemies are displayed in the arena.
+                         They don't do anything yet. <span class="pde"></span><br />
+                         <img alt="Enemies are in the arena" src="images/04Sprint/DrawnEnemies.jpg" /></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Nov <span>30</span></div>
+      <h2>Improved collision detection, proper 2.5D style, refactorings</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Collision detection has been fixed to work with entities' actual hitboxes. <br />
+                         The arena walls don't all occupy an entire tile anymore, but only the part where a wall is actually drawn. <br />
+                         Wall layers are drawn <i>above</i> entities, so entities can visually disappear
+                         behind walls (2.5D-effect). <br />
+                         Entities can slide along walls instead of getting stuck instantly when touching a wall. <span class="lk"></span></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Nov <span>28</span></div>
+      <h2>Installation instructions and Player selection screen</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">A requirements.txt file was added along with friendly installation instructions in the
+                         <a href="https://github.com/Teamprojekt-Roboarena-WS23/Roboarena/blob/main/README.md">README</a> file.
+                         <span class="lk"></span></li>
+        <li class="done">A player selection screen was added (you can scroll through the sprites, but they are not
+                         actually used in the game yet). <span class="pde"></span><br />
+                         <img alt="Player selection screen" src="images/04Sprint/PlayerSelection.jpg" /></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
       <div class="logdate">Nov <span>26</span></div>
       <h2>Basic collision detection and health bars for robots</h2>
     </div>

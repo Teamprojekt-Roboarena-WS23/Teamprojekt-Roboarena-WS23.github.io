@@ -34,316 +34,24 @@
   <content>
     <!-- Unordered Lists (ul) support list items (li) with following classes: "todo", "inprogress", "done" -->
     <!-- List entries can be finished off with <span class="your_initials"></span> to indicate who worked on what -->
-    <h1>Fifth Sprint: 11.12.23 - 14.01.24</h1>
-    <div class="logtitle">
-      <div class="logdate">Jan <span>14</span></div>
-      <h2>Added Credits</h2>
-    </div>
-    <div class="logtext">
-      <ul>
-        <li class="done">Added a credits section to the main menu, with clickable buttons to open relevant websites. <span class="lk"></span><br />
-                         <img alt="A credits screen is now available" src="images/05Sprint/Credits.jpg" /></li>
-      </ul>
-    </div>
-
-    <div class="logtitle">
-      <div class="logdate">Jan <span>13</span></div>
-      <h2>Improvements to the game appearence</h2>
-    </div>
-    <div class="logtext">
-      <ul>
-        <li class="done">Added a texture for bullets instead of the red squares <span class="lk"></span><br />
-                         <img alt="Bullets have a texture" src="images/05Sprint/BulletTexture.jpg" /></li>
-        <li class="done">We were using two seperate libraries for dealing with TMX files - move all uses of the <i>tmx</i> library to instead
-                         use the <i>PyTmx</i> library, to get rid of one dependency. <span class="lk"></span></li>
-        <li class="done">Fixed and enabled the buttons for the game end (game over and victory) panels. <span class="lk"></span><br />
-                         <img alt="The game end panels now have working buttons" src="images/05Sprint/GameEndButtons.jpg" /></li>
-      </ul>
-    </div>
-
-
-    <div class="logtitle">
-      <div class="logdate">Jan <span>07</span></div>
-      <h2>Sound effects</h2>
-    </div>
-    <div class="logtext">
-      <ul>
-        <li class="done">Added sound effects for shooting, dying, winning and losing. <span class="kd"></span></li>
-      </ul>
-    </div>
-
-    <div class="logtitle">
-      <div class="logdate">Dec <span>14</span></div>
-      <h2>Implementing enemies - More natural movement</h2>
-    </div>
-    <div class="logtext">
-      <ul>
-        <li class="done">Enemies target the player closest to them, health points and damage are
-                         calculated in a unified way for all Actors (Robots and Enemies). <span class="lk"></span><br />
-                         <img alt="Enemies rotate slowly and follow a target" src="images/05Sprint/ImprovedEnemies.gif"></li>
-      </ul>
-    </div>
-
-    <div class="logtitle">
-      <div class="logdate">Dec <span>11</span></div>
-      <h2>Investor meeting</h2>
-    </div>
-    <div class="logtext">
-    <p>We had a meeting with a hypothetical future investor for our game and tried to sell it as the newest Triple-A-title that will make us millions!<br />
-       Here are our <a href="images/05Sprint/NeuroSpectraVorstellung.pdf">presentation slides</a>! :) (They are in German)</p>
-    </div>
-
-    <h1>Fourth Sprint: 13.11.23 - 10.12.23</h1>
-    <div class="logtitle">
-      <div class="logdate">Dec <span>10</span></div>
-      <h2>Implementing enemies - Make them active</h2>
-    </div>
-    <div class="logtext">
-      <ul>
-        <li class="done">Enemies can move, shoot and target a player. They can do damage to players and
-                         take damage from shots.<span class="la"></span><br />
-                         <img alt="Enemies target players and shoot" src="images/04Sprint/ActiveEnemies.gif" /></li>
-      </ul>
-    </div>
-
-    <div class="logtitle">
-      <div class="logdate">Dec <span>04</span></div>
-      <h2>Implementing enemies - Decoding</h2>
-    </div>
-    <div class="logtext">
-      <ul>
-        <li class="done">Enemy positions are decoded from the level files and the enemies are displayed in the arena.
-                         They don't do anything yet. <span class="pde"></span><br />
-                         <img alt="Enemies are in the arena" src="images/04Sprint/DrawnEnemies.jpg" /></li>
-      </ul>
-    </div>
-
-    <div class="logtitle">
-      <div class="logdate">Nov <span>30</span></div>
-      <h2>Improved collision detection, proper 2.5D style, refactorings</h2>
-    </div>
-    <div class="logtext">
-      <ul>
-        <li class="done">Collision detection has been fixed to work with entities' actual hitboxes. <br />
-                         The arena walls don't all occupy an entire tile anymore, but only the part where a wall is actually drawn. <br />
-                         Wall layers are drawn <i>above</i> entities, so entities can visually disappear
-                         behind walls (2.5D-effect). <br />
-                         Entities can slide along walls instead of getting stuck instantly when touching a wall. <span class="lk"></span></li>
-      </ul>
-    </div>
-
-    <div class="logtitle">
-      <div class="logdate">Nov <span>28</span></div>
-      <h2>Installation instructions and Player selection screen</h2>
-    </div>
-    <div class="logtext">
-      <ul>
-        <li class="done">A requirements.txt file was added along with friendly installation instructions in the
-                         <a href="https://github.com/Teamprojekt-Roboarena-WS23/Roboarena/blob/main/README.md">README</a> file.
-                         <span class="lk"></span></li>
-        <li class="done">A player selection screen was added (you can scroll through the sprites, but they are not
-                         actually used in the game yet). <span class="pde"></span><br />
-                         <img alt="Player selection screen" src="images/04Sprint/PlayerSelection.jpg" /></li>
-      </ul>
-    </div>
-
-    <div class="logtitle">
-      <div class="logdate">Nov <span>26</span></div>
-      <h2>Basic collision detection and health bars for robots</h2>
-    </div>
-    <div class="logtext">
-      <ul>
-        <li class="done">Added basic collision detection (not working perfectly so far): Entities can no longer pass through walls. <br />
-                         They can die when touching acid and can revive each other. If both die, a Game Over screen is shown.
-                         <span class="pde"></span><span class="lk"></span><br />
-                         <img alt="Game Over screen" src="images/04Sprint/GameOver.jpg" /></li>
-
-        <li class="done">Added health bars and calculation of HP. Touching acid will reduce the HP of a robot until it dies.
-                         <span class="la"></span><br />
-                         <img alt="Robots now have health bars" src="images/04Sprint/HealthBars.jpg" /></li>
-      </ul>
-    </div>
-
-    <div class="logtitle">
-      <div class="logdate">Nov <span>25</span></div>
-      <h2>Bullets and a beautiful main menu</h2>
-    </div>
-    <div class="logtext">
-      <ul>
-        <li class="done">Added the ability for robots to shoot bullets, including the new bullet class. <span class="kd"></span><br />
-                         <img alt="Robots are shooting bullets" src="images/04Sprint/Shooting.jpg" /></li>
-
-        <li class="done">Added background music for the menus and the game. <span class="pde"></span></li>
-
-        <li class="done">Made the main menu and level selection screens beautiful with graphical backgrounds, buttons
-                         and hover and click effects. <span class="pde"></span><br />
-                         <img alt="Graphical main menu with image background and buttons" src="images/04Sprint/MainMenu.jpg">
-                         <img alt="Graphical level selection with image background and buttons" src="images/04Sprint/LevelSelection.jpg"></li>
-      </ul>
-    </div>
-
-    <div class="logtitle">
-      <div class="logdate">Nov <span>23</span></div>
-      <h2>Two controllable players saved in the arena map</h2>
-    </div>
-    <div class="logtext">
-      <ul>
-        <li class="done">Start to implement multiplayer capabilities: <br />
-                         The number of players was reduced to two, they are independently controllable:
-                         One with WASD and one with the arrow keys. It is no longer possible to select one active robot.
-                         <span class="lk"></span></li>
-
-        <li class="done">The starting positions for the two robots are stored per arena in the map TMX file. <span class="pde"></span><br />
-                         <img alt="The two robots have spawn points that fit the arena" src="images/04Sprint/StartingPositions.jpg" /></li>
-      </ul>
-    </div>
-
-    <div class="logtitle">
-      <div class="logdate">Nov <span>15</span></div>
-      <h2>Code Structure updated: Classes and Inheritance</h2>
-    </div>
-    <div class="logtext">
-      <ul>
-        <li class="done">Major Refactoring to put code in according classes and add the following inheritance structure: <br />
-                         An Entity is anything that can move in the arena. <br />
-                         An Actor is an active entity, that is a Robot (playable) or an Enemy.
-                         There can be other, passive Entities such as bullets. <br />
-                         A BasicRobot is an Actor. <br />
-                         This inheritance allows to easily draw, move, kill, etc. all kinds of entities without code duplication.
-                         <span class="lk"></span></li>
-      </ul>
-    </div>
-
-    <h1>Third Sprint: 30.10.23 - 12.11.23</h1>
-
-    <div class="logtitle">
-      <div class="logdate">Nov <span>12</span></div>
-      <h2>Load the arena with graphical tiles from TMX files</h2>
-    </div>
-    <div class="logtext">
-      <ul>
-        <li class="done">The arena is now loaded from TMX files instead, allowing for easily creating multiple layers, walls, and
-                         as many different kinds of tiles as desired. <span class="pde"></span><span class="lk"></span></li>
-
-        <li class="done">The robots are also drawn using graphical tiles now. <span class="pde"></span><br />
-                         <img src="images/03Sprint/TmxTiles.jpg" alt="A larger arena drawn with multiple layers of tiles" /></li>
-
-        <li class="done">A level selection screen has been added that dynamically shows buttons for levels.
-                         Any existing level can be loaded from TMX files. <span class="lk"></span><br />
-                         <img src="images/03Sprint/LevelSelection.gif" alt="Dynamic level selection screen based on tmx files"/></li>
-
-        <li class="done">Robots have acceleration, velocity and max velocity both for normal movement and rotation. <span class="kd"></span></li>
-      </ul>
-    </div>
-
-
-
-    <div class="logtitle">
-      <div class="logdate">Nov<span>08</span></div>
-      <h2>Created four robots that can all move</h2>
-    </div>
-    <div class="logtext">
-      <ul>
-        <li class="done">Four different robots are spawned on the field. You can select one with the number keys 1 to 4,
-                         and the currently selected robot can be moved and rotated using the arrow keys and mouse cursor.
-                         <span class="lk"></span><span class="kd"></span><br />
-                         <img src="images/03Sprint/FourRobots.gif" alt="Four robots can be selected and moved on the field" /></li>
-      </ul>
-    </div>
-
-    <div class="logtitle">
-      <div class="logdate">Nov<span>04</span></div>
-      <h2>Load the arena from an ASCII file with some graphical tiles</h2>
-    </div>
-    <div class="logtext">
-      <ul>
-        <li class="done">Load the arena from an ASCII text file <span class="la"></span></li>
-        <li class="done">Draw the arena with graphical tiles <span class="la"></span><span class="pde"></span><br />
-                         <img src="images/03Sprint/AsciiTiles.jpg" alt="Arena is now drawn with graphical tiles" /></li>
-      </ul>
-    </div>
-
-    <div class="logtitle">
-      <div class="logdate">Nov<span>01</span></div>
-      <h2>Added a main menu and made the screen smaller</h2>
-    </div>
-    <div class="logtext">
-      <p>
-        A very basic main menu has been added, and the screen size has been reduced from 1000 x 1000 px to 750 x 650 px.
-      </p>
-      <ul>
-        <li class="done">Created a very basic main menu to start the game and exit the program.
-                         The game can be exited to the main menu using the Escape key. <span class="lk"></span><span class="kd"></span><br />
-                         <img src="images/03Sprint/MainMenu.gif" alt="Main menu with working Play and Exit buttons" /></li>
-
-        <li class="done">Changed the size of the window so it fits on all our screens.
-                         The former size of 1000 x 1000 px was too high to fit on regular laptop screens. <span class="kd"></span><span class="lk"></span><br />
-                         <img src="images/03Sprint/SmallerWindow.jpg" alt="The window is now considerably smaller than before" /></li>
-      </ul>
-    </div>
-
-    <h1>Second Sprint: 16.10.23 - 29.10.23</h1>
-
-    <div class="logtitle">
-      <div class="logdate">Oct<span>25</span></div>
-      <h2>Update workflow</h2>
-    </div>
-    <div class="logtext">
-      <p>
-        All Flake8 warnings and style violations are now treated as errors and prohibit merging into the main branch.
-      </p>
-      <ul>
-        <li class="done">Changed the workflow<span class="kd"></span><br />
-                         <img alt="GitHub Workflow" src="images/02Sprint/new_workflow.png" /></li>
-      </ul>
-    </div>
-
-    <div class="logtitle">
-      <div class="logdate">Oct<span>23</span></div>
-      <h2>Gamedesign</h2>
-    </div>
-    <div class="logtext">
-      <p>
-        We met in the library and talked about how we wanted to design our game. <span class="kd"></span><span class="pde"></span><span class="lk"></span>
-      </p>
-      <ul>
-        <li class="done">That is how the different windows could be handled: <br />
-                         <img alt="Gamedesign windows" src="images/02Sprint/Gamedesign01.jpg" /></li>
-        <li class="done">And this is our UML structure and some future features: <br />
-                         <img alt="Gamedesign UML" src="images/02Sprint/Gamedesign02.jpg" /></li>
-      </ul>
-    </div>
-
-    <div class="logtitle">
-      <div class="logdate">Oct<span>18</span></div>
-      <h2>Added Game State Class</h2>
-    </div>
-    <div class="logtext">
-      <p>
-        Added the class GameState to handle the states of the world and movement.
-      </p>
-      <ul>
-        <li class="done">The structure of our current project:<span class="pde"></span><span class="lk"></span><br />
-                         <img alt="Current file stucture as of 30.10." src="images/02Sprint/Current-Project.png" /></li>
-      </ul>
-    </div>
-
-    <div class="logtitle">
-      <div class="logdate">Oct<span>16</span></div>
-      <h2>We implemented new features (BasicRobot and Arena)</h2>
-    </div>
-    <div class="logtext">
-    <ul>
-      <li class="done">BasicRobot with position and direction attributes<span class="pde"><span class="lk"></span></span><br />
-                       <img alt="BasicRobot" src="images/02Sprint/RoundWithAngle.gif" /></li>
-
-      <li class="done">New Arena and terrain class<span class="pde"></span><span class="lk"></span><br />
-                       <img alt="basicArena" src="images/02Sprint/ArenaTiles.gif" /></li>
-    </ul>
-    </div>
-
-
     <h1>First Sprint: 02.10.23 - 15.10.23</h1>
+    <div class="logtitle">
+      <div class="logdate">Oct<span>02</span></div>
+      <h2>Very First Actions</h2>
+    </div>
+    <div class="logtext">
+      <p>
+        In the first meeting, we settled the following things:
+      </p>
+      <ul>
+        <li>The game will be implemented with the PyGame library.</li>
+
+        <li>We will probably meet every other monday for sprint reviews and distributing new tasks.</li>
+
+        <li class="done">We created the <a href="https://github.com/Teamprojekt-Roboarena-WS23">project organizazion</a>
+                         and the <a href="https://github.com/Teamprojekt-Roboarena-WS23/Roboarena">project repository</a> on GitHub.</li>
+      </ul>
+    </div>
 
     <div class="logtitle">
       <div class="logdate">Oct<span>04</span></div>
@@ -381,21 +89,310 @@
       </ul>
     </div>
 
+
+    <h1>Second Sprint: 16.10.23 - 29.10.23</h1>
     <div class="logtitle">
-      <div class="logdate">Oct<span>02</span></div>
-      <h2>Very First Actions</h2>
+      <div class="logdate">Oct<span>16</span></div>
+      <h2>We implemented new features (BasicRobot and Arena)</h2>
+    </div>
+    <div class="logtext">
+    <ul>
+      <li class="done">BasicRobot with position and direction attributes<span class="pde"><span class="lk"></span></span><br />
+                       <img alt="BasicRobot" src="images/02Sprint/RoundWithAngle.gif" /></li>
+
+      <li class="done">New Arena and terrain class<span class="pde"></span><span class="lk"></span><br />
+                       <img alt="basicArena" src="images/02Sprint/ArenaTiles.gif" /></li>
+    </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Oct<span>18</span></div>
+      <h2>Added Game State Class</h2>
     </div>
     <div class="logtext">
       <p>
-        In the first meeting, we settled the following things:
+        Added the class GameState to handle the states of the world and movement.
       </p>
       <ul>
-        <li>The game will be implemented with the PyGame library.</li>
+        <li class="done">The structure of our current project:<span class="pde"></span><span class="lk"></span><br />
+                         <img alt="Current file stucture as of 30.10." src="images/02Sprint/Current-Project.png" /></li>
+      </ul>
+    </div>
 
-        <li>We will probably meet every other monday for sprint reviews and distributing new tasks.</li>
+    <div class="logtitle">
+      <div class="logdate">Oct<span>23</span></div>
+      <h2>Gamedesign</h2>
+    </div>
+    <div class="logtext">
+      <p>
+        We met in the library and talked about how we wanted to design our game. <span class="kd"></span><span class="pde"></span><span class="lk"></span>
+      </p>
+      <ul>
+        <li class="done">That is how the different windows could be handled: <br />
+                         <img alt="Gamedesign windows" src="images/02Sprint/Gamedesign01.jpg" /></li>
+        <li class="done">And this is our UML structure and some future features: <br />
+                         <img alt="Gamedesign UML" src="images/02Sprint/Gamedesign02.jpg" /></li>
+      </ul>
+    </div>
 
-        <li class="done">We created the <a href="https://github.com/Teamprojekt-Roboarena-WS23">project organizazion</a>
-                         and the <a href="https://github.com/Teamprojekt-Roboarena-WS23/Roboarena">project repository</a> on GitHub.</li>
+    <div class="logtitle">
+      <div class="logdate">Oct<span>25</span></div>
+      <h2>Update workflow</h2>
+    </div>
+    <div class="logtext">
+      <p>
+        All Flake8 warnings and style violations are now treated as errors and prohibit merging into the main branch.
+      </p>
+      <ul>
+        <li class="done">Changed the workflow<span class="kd"></span><br />
+                         <img alt="GitHub Workflow" src="images/02Sprint/new_workflow.png" /></li>
+      </ul>
+    </div>
+
+
+    <h1>Third Sprint: 30.10.23 - 12.11.23</h1>
+    <div class="logtitle">
+      <div class="logdate">Nov<span>01</span></div>
+      <h2>Added a main menu and made the screen smaller</h2>
+    </div>
+    <div class="logtext">
+      <p>
+        A very basic main menu has been added, and the screen size has been reduced from 1000 x 1000 px to 750 x 650 px.
+      </p>
+      <ul>
+        <li class="done">Created a very basic main menu to start the game and exit the program.
+                         The game can be exited to the main menu using the Escape key. <span class="lk"></span><span class="kd"></span><br />
+                         <img src="images/03Sprint/MainMenu.gif" alt="Main menu with working Play and Exit buttons" /></li>
+
+        <li class="done">Changed the size of the window so it fits on all our screens.
+                         The former size of 1000 x 1000 px was too high to fit on regular laptop screens. <span class="kd"></span><span class="lk"></span><br />
+                         <img src="images/03Sprint/SmallerWindow.jpg" alt="The window is now considerably smaller than before" /></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Nov<span>04</span></div>
+      <h2>Load the arena from an ASCII file with some graphical tiles</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Load the arena from an ASCII text file <span class="la"></span></li>
+        <li class="done">Draw the arena with graphical tiles <span class="la"></span><span class="pde"></span><br />
+                         <img src="images/03Sprint/AsciiTiles.jpg" alt="Arena is now drawn with graphical tiles" /></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Nov<span>08</span></div>
+      <h2>Created four robots that can all move</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Four different robots are spawned on the field. You can select one with the number keys 1 to 4,
+                         and the currently selected robot can be moved and rotated using the arrow keys and mouse cursor.
+                         <span class="lk"></span><span class="kd"></span><br />
+                         <img src="images/03Sprint/FourRobots.gif" alt="Four robots can be selected and moved on the field" /></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Nov <span>12</span></div>
+      <h2>Load the arena with graphical tiles from TMX files</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">The arena is now loaded from TMX files instead, allowing for easily creating multiple layers, walls, and
+                         as many different kinds of tiles as desired. <span class="pde"></span><span class="lk"></span></li>
+
+        <li class="done">The robots are also drawn using graphical tiles now. <span class="pde"></span><br />
+                         <img src="images/03Sprint/TmxTiles.jpg" alt="A larger arena drawn with multiple layers of tiles" /></li>
+
+        <li class="done">A level selection screen has been added that dynamically shows buttons for levels.
+                         Any existing level can be loaded from TMX files. <span class="lk"></span><br />
+                         <img src="images/03Sprint/LevelSelection.gif" alt="Dynamic level selection screen based on tmx files"/></li>
+
+        <li class="done">Robots have acceleration, velocity and max velocity both for normal movement and rotation. <span class="kd"></span></li>
+      </ul>
+    </div>
+
+
+    <h1>Fourth Sprint: 13.11.23 - 10.12.23</h1>
+    <div class="logtitle">
+      <div class="logdate">Nov <span>15</span></div>
+      <h2>Code Structure updated: Classes and Inheritance</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Major Refactoring to put code in according classes and add the following inheritance structure: <br />
+                         An Entity is anything that can move in the arena. <br />
+                         An Actor is an active entity, that is a Robot (playable) or an Enemy.
+                         There can be other, passive Entities such as bullets. <br />
+                         A BasicRobot is an Actor. <br />
+                         This inheritance allows to easily draw, move, kill, etc. all kinds of entities without code duplication.
+                         <span class="lk"></span></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Nov <span>23</span></div>
+      <h2>Two controllable players saved in the arena map</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Start to implement multiplayer capabilities: <br />
+                         The number of players was reduced to two, they are independently controllable:
+                         One with WASD and one with the arrow keys. It is no longer possible to select one active robot.
+                         <span class="lk"></span></li>
+
+        <li class="done">The starting positions for the two robots are stored per arena in the map TMX file. <span class="pde"></span><br />
+                         <img alt="The two robots have spawn points that fit the arena" src="images/04Sprint/StartingPositions.jpg" /></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Nov <span>25</span></div>
+      <h2>Bullets and a beautiful main menu</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Added the ability for robots to shoot bullets, including the new bullet class. <span class="kd"></span><br />
+                         <img alt="Robots are shooting bullets" src="images/04Sprint/Shooting.jpg" /></li>
+
+        <li class="done">Added background music for the menus and the game. <span class="pde"></span></li>
+
+        <li class="done">Made the main menu and level selection screens beautiful with graphical backgrounds, buttons
+                         and hover and click effects. <span class="pde"></span><br />
+                         <img alt="Graphical main menu with image background and buttons" src="images/04Sprint/MainMenu.jpg">
+                         <img alt="Graphical level selection with image background and buttons" src="images/04Sprint/LevelSelection.jpg"></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Nov <span>26</span></div>
+      <h2>Basic collision detection and health bars for robots</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Added basic collision detection (not working perfectly so far): Entities can no longer pass through walls. <br />
+                         They can die when touching acid and can revive each other. If both die, a Game Over screen is shown.
+                         <span class="pde"></span><span class="lk"></span><br />
+                         <img alt="Game Over screen" src="images/04Sprint/GameOver.jpg" /></li>
+
+        <li class="done">Added health bars and calculation of HP. Touching acid will reduce the HP of a robot until it dies.
+                         <span class="la"></span><br />
+                         <img alt="Robots now have health bars" src="images/04Sprint/HealthBars.jpg" /></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Nov <span>28</span></div>
+      <h2>Installation instructions and Player selection screen</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">A requirements.txt file was added along with friendly installation instructions in the
+                         <a href="https://github.com/Teamprojekt-Roboarena-WS23/Roboarena/blob/main/README.md">README</a> file.
+                         <span class="lk"></span></li>
+        <li class="done">A player selection screen was added (you can scroll through the sprites, but they are not
+                         actually used in the game yet). <span class="pde"></span><br />
+                         <img alt="Player selection screen" src="images/04Sprint/PlayerSelection.jpg" /></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Nov <span>30</span></div>
+      <h2>Improved collision detection, proper 2.5D style, refactorings</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Collision detection has been fixed to work with entities' actual hitboxes. <br />
+                         The arena walls don't all occupy an entire tile anymore, but only the part where a wall is actually drawn. <br />
+                         Wall layers are drawn <i>above</i> entities, so entities can visually disappear
+                         behind walls (2.5D-effect). <br />
+                         Entities can slide along walls instead of getting stuck instantly when touching a wall. <span class="lk"></span></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Dec <span>04</span></div>
+      <h2>Implementing enemies - Decoding</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Enemy positions are decoded from the level files and the enemies are displayed in the arena.
+                         They don't do anything yet. <span class="pde"></span><br />
+                         <img alt="Enemies are in the arena" src="images/04Sprint/DrawnEnemies.jpg" /></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Dec <span>10</span></div>
+      <h2>Implementing enemies - Make them active</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Enemies can move, shoot and target a player. They can do damage to players and
+                         take damage from shots.<span class="la"></span><br />
+                         <img alt="Enemies target players and shoot" src="images/04Sprint/ActiveEnemies.gif" /></li>
+      </ul>
+    </div>
+
+
+    <h1>Fifth Sprint: 11.12.23 - 14.01.24</h1>
+    <div class="logtitle">
+      <div class="logdate">Dec <span>11</span></div>
+      <h2>Investor meeting</h2>
+    </div>
+    <div class="logtext">
+    <p>We had a meeting with a hypothetical future investor for our game and tried to sell it as the newest Triple-A-title that will make us millions!<br />
+       Here are our <a href="images/05Sprint/NeuroSpectraVorstellung.pdf">presentation slides</a>! :) (They are in German)</p>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Dec <span>14</span></div>
+      <h2>Implementing enemies - More natural movement</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Enemies target the player closest to them, health points and damage are
+                         calculated in a unified way for all Actors (Robots and Enemies). <span class="lk"></span><br />
+                         <img alt="Enemies rotate slowly and follow a target" src="images/05Sprint/ImprovedEnemies.gif"></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Jan <span>07</span></div>
+      <h2>Sound effects</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Added sound effects for shooting, dying, winning and losing. <span class="kd"></span></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Jan <span>13</span></div>
+      <h2>Improvements to the game appearence</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Added a texture for bullets instead of the red squares <span class="lk"></span><br />
+                         <img alt="Bullets have a texture" src="images/05Sprint/BulletTexture.jpg" /></li>
+        <li class="done">We were using two seperate libraries for dealing with TMX files - move all uses of the <i>tmx</i> library to instead
+                         use the <i>PyTmx</i> library, to get rid of one dependency. <span class="lk"></span></li>
+        <li class="done">Fixed and enabled the buttons for the game end (game over and victory) panels. <span class="lk"></span><br />
+                         <img alt="The game end panels now have working buttons" src="images/05Sprint/GameEndButtons.jpg" /></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Jan <span>14</span></div>
+      <h2>Added Credits</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Added a credits section to the main menu, with clickable buttons to open relevant websites. <span class="lk"></span><br />
+                         <img alt="A credits screen is now available" src="images/05Sprint/Credits.jpg" /></li>
       </ul>
     </div>
 

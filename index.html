@@ -34,24 +34,81 @@
   <content>
     <!-- Unordered Lists (ul) support list items (li) with following classes: "todo", "inprogress", "done" -->
     <!-- List entries can be finished off with <span class="your_initials"></span> to indicate who worked on what -->
-    <h1>Fourth Sprint: 13.11.23 - 10.12.23</h1>
+    <h1>Fifth Sprint: 11.12.23 - 14.01.24</h1>
     <div class="logtitle">
-      <div class="logdate">Dec <span>10</span></div>
-      <h2>Implementing enemies</h2>
+      <div class="logdate">Jan <span>14</span></div>
+      <h2>Added Credits</h2>
     </div>
     <div class="logtext">
       <ul>
-        <li class="inprogress">Enemies can move, shoot and target a player. They can do damage to players and
-                         take damage from shots.<span class="la"></span></li>
-        <li class="inprogress">Enemies target the player closest to them, health points and damage are
-                               calculated in a unified way for all Actors (Robots and Enemies). <span class="lk"></span> <br/>
-                               <img alt="Enemies target players and shoot" src="images/04Sprint/ActiveEnemies.gif" /></li>
+        <li class="done">Added a credits section to the main menu, with clickable buttons to open relevant websites. <span class="lk"></span><br />
+                         <img alt="A credits screen is now available" src="images/05Sprint/Credits.jpg" /></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Jan <span>13</span></div>
+      <h2>Improvements to the game appearence</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Added a texture for bullets instead of the red squares <span class="lk"></span><br />
+                         <img alt="Bullets have a texture" src="images/05Sprint/BulletTexture.jpg" /></li>
+        <li class="done">We were using two seperate libraries for dealing with TMX files - move all uses of the <i>tmx</i> library to instead
+                         use the <i>PyTmx</i> library, to get rid of one dependency. <span class="lk"></span></li>
+        <li class="done">Fixed and enabled the buttons for the game end (game over and victory) panels. <span class="lk"></span><br />
+                         <img alt="The game end panels now have working buttons" src="images/05Sprint/GameEndButtons.jpg" /></li>
+      </ul>
+    </div>
+
+
+    <div class="logtitle">
+      <div class="logdate">Jan <span>07</span></div>
+      <h2>Sound effects</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Added sound effects for shooting, dying, winning and losing. <span class="kd"></span></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Dec <span>14</span></div>
+      <h2>Implementing enemies - More natural movement</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Enemies target the player closest to them, health points and damage are
+                         calculated in a unified way for all Actors (Robots and Enemies). <span class="lk"></span><br />
+                         <img alt="Enemies rotate slowly and follow a target" src="images/05Sprint/ImprovedEnemies.gif"></li>
+      </ul>
+    </div>
+
+    <div class="logtitle">
+      <div class="logdate">Dec <span>11</span></div>
+      <h2>Investor meeting</h2>
+    </div>
+    <div class="logtext">
+    <p>We had a meeting with a hypothetical future investor for our game and tried to sell it as the newest Triple-A-title that will make us millions!<br />
+       Here are our <a href="images/05Sprint/NeuroSpectraVorstellung.pdf">presentation slides</a>! :) (They are in German)</p>
+    </div>
+
+    <h1>Fourth Sprint: 13.11.23 - 10.12.23</h1>
+    <div class="logtitle">
+      <div class="logdate">Dec <span>10</span></div>
+      <h2>Implementing enemies - Make them active</h2>
+    </div>
+    <div class="logtext">
+      <ul>
+        <li class="done">Enemies can move, shoot and target a player. They can do damage to players and
+                         take damage from shots.<span class="la"></span><br />
+                         <img alt="Enemies target players and shoot" src="images/04Sprint/ActiveEnemies.gif" /></li>
       </ul>
     </div>
 
     <div class="logtitle">
       <div class="logdate">Dec <span>04</span></div>
-      <h2>Started implementing enemies</h2>
+      <h2>Implementing enemies - Decoding</h2>
     </div>
     <div class="logtext">
       <ul>
